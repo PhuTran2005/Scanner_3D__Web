@@ -1,7 +1,12 @@
 import "./App.css";
+import Model from "./Component/Model";
 
 function App() {
-  return <>Project</>;
+  return (
+    <>
+      <Model />
+    </>
+  );
 }
 
 export default App;
