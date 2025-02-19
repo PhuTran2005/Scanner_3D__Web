@@ -1,10 +1,13 @@
 import "./App.css";
-import Model from "./Component/Model";
+import AllRouters from "./Routers";
+import ModelViewerComponent from "./Component/Model";
 
 function App() {
   return (
     <>
-      <Model />
+      <ModelViewerComponent />
+      {/* <AllRouters />
+       */}
     </>
   );
 }

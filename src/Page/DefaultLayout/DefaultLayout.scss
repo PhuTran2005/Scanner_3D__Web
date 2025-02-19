@@ -1,0 +1,36 @@
+.wrap {
+  padding: 10px;
+}
+.header {
+  border-radius: 5px;
+  background: linear-gradient(to right, #000000, #3533cc);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  &__logo {
+    color: white;
+    img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+    }
+  }
+  &__nav {
+    display: flex;
+    ul {
+      display: flex;
+      li {
+        a {
+          color: white;
+          font-size: 17px;
+          font-weight: 400;
+        }
+        padding-right: 20px;
+      }
+    }
+  }
+}
+.footer {
+  display: flex;
+}
