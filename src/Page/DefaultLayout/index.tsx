@@ -1,12 +1,18 @@
 import { NavLink, Outlet } from "react-router-dom";
 import "./DefaultLayout.scss";
+import logo from "../../assets/img/logo.png";
+import { FaFacebook } from "react-icons/fa";
+import { FaFacebookMessenger } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import { FaInstagramSquare } from "react-icons/fa";
+import { AiOutlineSearch } from "react-icons/ai";
 export default function DefaultLayout() {
   return (
     <>
       <div className="wrap">
         <header className="header">
           <div className="header__logo">
-            <img src="" alt="Logo" />
+            <img src={logo} alt="Logo" />
           </div>
           <div className="header__nav">
             <ul>
@@ -21,7 +27,8 @@ export default function DefaultLayout() {
               </li>
             </ul>
             <div className="header__search">
-              <input type="text" />
+              <AiOutlineSearch size={20} />
+              <input type="text" placeholder="Tìm kiếm" />
             </div>
           </div>
         </header>
@@ -32,17 +39,25 @@ export default function DefaultLayout() {
           <ul className="footer__nav">
             <li className="footer__social">
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                  <FaFacebook size={25} color="blue" />
+                </li>
+                <li>
+                  <FaFacebookMessenger size={25} color="blue" />
+                </li>
+                <li>
+                  <IoIosMail size={25} color="blue" />
+                </li>
+                <li>
+                  <FaInstagramSquare size={25} color="blue" />
+                </li>
               </ul>
             </li>
             <li className="footer__copyrigth">
               <p>CopyRight by IT</p>
             </li>
             <li className="footer__logo">
-              <img src="" alt="logo" />
+              <img src={logo} alt="logo" />
             </li>
           </ul>
         </footer>
