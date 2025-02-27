@@ -5,7 +5,6 @@ const init = {
   hotspots: [],
 };
 export const ModelReducer = (state = init, action) => {
-  console.log(state, action);
   switch (action.action) {
     case "CHANGE": {
       return action.data;

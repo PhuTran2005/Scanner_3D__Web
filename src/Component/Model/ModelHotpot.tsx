@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
-
+import { RootState } from "../../store/store";
 export default function ModelHotspot() {
-  const model = useSelector((state) => state.ModelReducer);
-  console.log(model);
+  const model = useSelector((state: RootState) => state.ModelReducer);
+
   return (
     <>
       <h1>Hotspots</h1>

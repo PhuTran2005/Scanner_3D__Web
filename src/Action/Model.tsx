@@ -1,4 +1,4 @@
-export const changeModel = (data) => {
+export const changeModel = (data: object) => {
   return {
     type: "action",
     action: "CHANGE",

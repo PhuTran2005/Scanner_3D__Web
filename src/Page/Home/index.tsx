@@ -1,10 +1,13 @@
 import "./Home.scss";
-import { useSelector } from "react-redux";
+
 import ModelViewerComponent from "../../Component/Model";
 import ModelHotspot from "../../Component/Model/ModelHotpot";
 import ModelAll from "../../Component/Model/ModelAll";
+import { useSelector } from "react-redux";
+import { RootState } from "../../store/store"; // Đảm bảo import kiểu RootState
+
 export default function Home() {
-  const model = useSelector((state) => state.ModelReducer);
+  const model = useSelector((state: RootState) => state.ModelReducer);
   console.log(model);
   const data = [
     {

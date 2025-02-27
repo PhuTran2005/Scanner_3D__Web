@@ -98,6 +98,9 @@ img {
   }
   &__right {
     ul {
+      .active {
+        border: 2px solid red;
+      }
       li {
         border: 1px solid black;
         padding: 5px;
