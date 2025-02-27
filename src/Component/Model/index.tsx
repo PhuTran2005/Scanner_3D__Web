@@ -2,7 +2,6 @@ import { useState, useRef, useEffect } from "react";
 
 import "./Model.scss";
 import { useSelector } from "react-redux";
-import { getModelList } from "../../Service";
 import { RootState } from "../../store/store";
 const ModelViewerComponent = () => {
   const modelSrc = useSelector((state: RootState) => state.ModelReducer);
@@ -33,11 +32,6 @@ const ModelViewerComponent = () => {
   };
 
   useEffect(() => {
-    const fetchApi = async () => {
-      const data = await getModelList();
-      console.log(data);
-    };
-    fetchApi();
     const handleClickOutside = () => {
       hideTooltip();
     };
